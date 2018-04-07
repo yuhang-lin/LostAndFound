@@ -128,7 +128,7 @@ try {
   $dotenv->load();
 } catch (Exception $e) {
     error_log("No .env file found");
- }
+}
 $app->get('/', function () {
   global $app;
     $app->render('homepage.php');
@@ -139,7 +139,7 @@ $app->get('/queryPageData', function() {
   global $conn;
   global $app;
   $res = selectFromFound($conn, array('blue', 'Bottle'), 0);
-  $app->render(fillTemplate('./templates/t.html', $res));
+//   $app->render(fillTemplate('./templates/t.html', $res));
 });
 
 $app->get('/lost/', function () {

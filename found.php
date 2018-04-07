@@ -15,59 +15,54 @@
  * limitations under the License.
  */
 
- /**
-  * This PHP file uses the Slim Framework to construct a REST API.
-  * See Cloudant.php for the database functionality
-  */
+/**
+ * This PHP file uses the Slim Framework to construct a REST API.
+ * See Cloudant.php for the database functionality
+ */
 require 'vendor/autoload.php';
 require_once('./Cloudant.php');
 $app = new \Slim\Slim();
 $dotenv = new Dotenv\Dotenv(__DIR__);
 try {
-  $dotenv->load();
+    $dotenv->load();
 } catch (Exception $e) {
     error_log("No .env file found");
- }
-$app->get('/', function () {
-  global $app;
-    $app->render('index.html');
-});
-
+}
 $app->get('/found/', function () {
     global $app;
     $app->render('found.html');
 });
 
 $app->get('/api/visitors', function () {
-  global $app;
-  $app->contentType('application/json');
-  $visitors = array();
-  if(Cloudant::Instance()->isConnected()) {
-    $visitors = Cloudant::Instance()->get();
-  }
-  echo json_encode($visitors);
+    global $app;
+    $app->contentType('application/json');
+    $visitors = array();
+    if(Cloudant::Instance()->isConnected()) {
+        $visitors = Cloudant::Instance()->get();
+    }
+    echo json_encode($visitors);
 });
 
 $app->post('/api/visitors', function() {
-	global $app;
-  $visitor = json_decode($app->request()->getBody(), true);
-  if(Cloudant::Instance()->isConnected()) {
-    Cloudant::Instance()->post($visitor);
-    echo sprintf("Hello %s, I've added you to the database!", $visitor['name']);
-  } else {
-    echo sprintf("Hello %s!", $visitor['name']);
-  }
+    global $app;
+    $visitor = json_decode($app->request()->getBody(), true);
+    if(Cloudant::Instance()->isConnected()) {
+        Cloudant::Instance()->post($visitor);
+        echo sprintf("Hello %s, I've added you to the database!", $visitor['name']);
+    } else {
+        echo sprintf("Hello %s!", $visitor['name']);
+    }
 });
 
 $app->delete('/api/visitors/:id', function($id) {
-	global $app;
-	Cloudant::Instance()->delete($id);
+    global $app;
+    Cloudant::Instance()->delete($id);
     $app->response()->status(204);
 });
 
 $app->put('/api/visitors/:id', function($id) {
-	global $app;
-	$visitor = json_decode($app->request()->getBody(), true);
+    global $app;
+    $visitor = json_decode($app->request()->getBody(), true);
     echo json_encode(Cloudant::Instance()->put($id, $visitor));
 });
 

@@ -23,12 +23,12 @@ include ("top.php");
     <div class="container">
         <h1>Found Page</h1>
          <div>
-            <a href="templates/lost.html">
-            <button class="button" style="vertical-align:middle"><span>Lost</span></button>
+             <a href="uploadPic.php">
+            <button class="button" style="vertical-align:middle"><span>Search by uploading picture</span></button>
             </a>
         </div>
-         <div><a href="templatesfound.html">
-            <button class="button" style="vertical-align:middle"><span>Found</span></button>
+        <div><a href="searchKeyWord.php">
+            <button class="button" style="vertical-align:middle"><span>Search by keyword</span></button>
         </a>
         </div>
         <p id="response" class="lead text-center"></p>

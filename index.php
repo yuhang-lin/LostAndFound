@@ -135,12 +135,12 @@ $app->get('/', function () {
     $app->render('footer.php');
 });
 
-$app->get('/queryPageData', function() {
-  global $conn;
-  global $app;
-  $res = selectFromFound($conn, array('blue', 'Bottle'), 0);
-//   $app->render(fillTemplate('./templates/t.html', $res));
-});
+// $app->get('/queryPageData', function() {
+//   global $conn;
+//   global $app;
+//   $res = selectFromFound($conn, array('blue', 'Bottle'), 0);
+// //   $app->render(fillTemplate('./templates/t.html', $res));
+// });
 
 $app->get('/lost/', function () {
     global $app;

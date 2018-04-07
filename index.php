@@ -35,7 +35,7 @@ $app->get('/', function () {
 
 $app->get('/found/', function () {
     global $app;
-    $app->render('found.html');
+    $app->render('found.php');
 });
 
 $app->get('/api/visitors', function () {

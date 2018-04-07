@@ -1,5 +1,5 @@
 ---
 applications:
- - name: phpUVMTest
+ - name: LostAndFound
    random-route: true
    memory: 128M

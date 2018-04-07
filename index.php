@@ -33,6 +33,11 @@ $app->get('/', function () {
     $app->render('homepage.php');
 });
 
+$app->get('/lost/', function () {
+    global $app;
+    $app->render('lost.php');
+});
+
 $app->get('/found/', function () {
     global $app;
     $app->render('found.php');

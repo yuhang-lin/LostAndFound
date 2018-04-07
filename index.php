@@ -22,7 +22,7 @@
 require 'vendor/autoload.php';
 require_once('./QueryPageData.php');
 
-$servername = "hanghang.tk";
+/*$servername = "hanghang.tk";
 $username = "aaron";
 $password = "HxOQgaO7ZMi4feC0";
 $dbname = "codefest";
@@ -36,9 +36,11 @@ if (!$conn) {
     echo 'hello';
 }
 
+
 /**
  * Execute the query to database
  */
+/*
 function passQuery($conn, $query){
     if ($result = $conn->query($query)) {
         echo "Table MyGuests created successfully";
@@ -51,6 +53,7 @@ function passQuery($conn, $query){
 /**
  * Transform input parameters including NULL to a string type query
  */
+/*
 function insertFound($conn, $datetime, $URL, $contact, $description, $location, $type)
 {
     $columnArray = array('datetime', 'URL', 'contact', 'description', 'location', 'type');

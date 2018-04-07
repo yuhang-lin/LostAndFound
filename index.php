@@ -31,11 +31,13 @@ try {
 $app->get('/', function () {
   global $app;
     $app->render('homepage.php');
+    $app->render('footer.php');
 });
 
 $app->get('/lost/', function () {
     global $app;
     $app->render('lost.php');
+    $app->render('footer.php');
 });
 
 $app->get('/found/', function () {

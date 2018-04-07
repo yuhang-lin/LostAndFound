@@ -25,7 +25,7 @@ include ("top.php");
   
   <div class="w3-display-middle w3-center">
     <!-- <span class="w3-text-black" style="font-size:90px">Lost</span> -->
-    <a href="lost.php" class="w3-tag w3-wide" style="font-size:90px" role="button" >Lost</a>
+    <a href="/lost/" class="w3-tag w3-wide" style="font-size:90px" role="button" >Lost</a>
   </div>
  
    </header>
@@ -33,7 +33,7 @@ include ("top.php");
    <header class="background w3-display-container w3-grayscale-min" id="science">
   
   <div class="w3-display-middle w3-center">
-    <a href="found.php" class="w3-tag w3-wide" style="font-size:90px" role="button" >Found</a>
+    <a href="/found/" class="w3-tag w3-wide" style="font-size:90px" role="button" >Found</a>
   </div>
  
    </header>

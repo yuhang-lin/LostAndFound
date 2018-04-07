@@ -82,7 +82,7 @@ function insertFound($conn, $datetime, $URL, $contact, $description, $location, 
  * Retrieve the information from database
  */
 
-function selectFromFound($conn, $keywords, $type){
+/*function selectFromFound($conn, $keywords, $type){
 
     $keywordStr = "";
     foreach($keywords as $keyword) {
@@ -103,8 +103,8 @@ function selectFromFound($conn, $keywords, $type){
     $result = passQuery($conn, $query);
     return $result;
     
-}
-
+}*/
+/*
 function fillTemplate($templateName, $result) {
   $html = "";
   while ($row = mysqli_fetch_assoc($result)) {
@@ -120,7 +120,7 @@ function fillTemplate($templateName, $result) {
     $html .= $htmlContent;
   }
   return $html;
-}
+}*/
 
 $app = new \Slim\Slim();
 $dotenv = new Dotenv\Dotenv(__DIR__);

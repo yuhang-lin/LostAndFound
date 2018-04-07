@@ -9,28 +9,14 @@ a {text-decoration: none;}
 #home.background {
     background-position: center;
     background-size: cover;
-    background-image: url("https://ylin19.w3.uvm.edu/codefest/lnf/images/homepage.jpg");
+    background-image: url("../images/homepage.jpg");
     min-height: 75%;
 }
 
 #home1.background {
     background-position: center;
     background-size: cover;
-    background-image: url("https://ylin19.w3.uvm.edu/codefest/lnf/images/homepage.jpg");
-    min-height: 100%;
-}
-
-#science.background{
-    background-position: center;
-    background-size: cover;
-    background-image: url("https://ylin19.w3.uvm.edu/codefest/lnf/images/science.jpg");
-    min-height: 75%;
-}
-
-#science1.background{
-    background-position: center;
-    background-size: cover;
-    background-image: url("https://ylin19.w3.uvm.edu/codefest/lnf/images/science.jpg");
+    background-image: url("../images/homepage.jpg");
     min-height: 100%;
 }
 
@@ -43,10 +29,15 @@ a {text-decoration: none;}
 #poster.background{
     background-position: center;
     background-size: cover;
-    background-image: url("https://ylin19.w3.uvm.edu/codefest/lnf/images/poster.jpg");
+    background-image: url("../images/poster.jpg");
     min-height: 75%;
 }
-
+#science.background{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/science.jpg");
+    min-height: 75%;
+}
 #thriller.background{
      background-position: center;
     background-size: cover;

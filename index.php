@@ -131,7 +131,8 @@ try {
  }
 $app->get('/', function () {
   global $app;
-  $app->render('index.html');
+    $app->render('homepage.php');
+    $app->render('footer.php');
 });
 
 $app->get('/queryPageData', function() {
@@ -141,9 +142,16 @@ $app->get('/queryPageData', function() {
   $app->render(fillTemplate('./templates/t.html', $res));
 });
 
+$app->get('/lost/', function () {
+    global $app;
+    $app->render('lost.php');
+    $app->render('footer.php');
+});
+
 $app->get('/found/', function () {
     global $app;
     $app->render('found.php');
+    $app->render('footer.php');
 });
 
 $app->get('/api/visitors', function () {

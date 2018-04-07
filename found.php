@@ -28,7 +28,7 @@ try {
 } catch (Exception $e) {
     error_log("No .env file found");
 }
-$app->get('/', function () {
+$app->get('/found/', function () {
     global $app;
     $app->render('found.html');
 });

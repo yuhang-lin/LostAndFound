@@ -31,7 +31,11 @@ try {
 $app->get('/', function () {
   global $app;
     $app->render('index.html');
-    $app->render('uploadPic.html');
+});
+
+$app->get('/found/', function () {
+    global $app;
+    $app->render('found.php');
 });
 
 $app->get('/api/visitors', function () {

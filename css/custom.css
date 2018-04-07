@@ -1,0 +1,66 @@
+
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+
+a {text-decoration: none;}
+
+#home.background {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/homepage.jpg");
+    min-height: 75%;
+}
+
+#home1.background {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/homepage.jpg");
+    min-height: 100%;
+}
+
+#director.background{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/director.jpg");
+    min-height: 75%;
+}
+#poster.background{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/poster.jpg");
+    min-height: 75%;
+}
+#science.background{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/science.jpg");
+    min-height: 75%;
+}
+#thriller.background{
+     background-position: center;
+    background-size: cover;
+    background-image: url("../images/thriller.jpg");
+    min-height: 75%;
+}
+#animation.background{
+     background-position: center;
+    background-size: cover;
+    background-image: url("../images/panda.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+.pic{
+   width: 85%;
+    height: 100%;
+}
+.h1{
+    text-align: center;
+}
+
+h4:hover{
+    background-color: lightgray;
+}

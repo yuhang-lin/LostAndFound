@@ -33,6 +33,11 @@ $app->get('/', function () {
     $app->render('index.html');
 });
 
+$app->get('/found/', function () {
+    global $app;
+    $app->render('found.html');
+});
+
 $app->get('/api/visitors', function () {
   global $app;
   $app->contentType('application/json');

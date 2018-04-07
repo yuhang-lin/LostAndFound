@@ -14,7 +14,7 @@ include("top.php");
 
     <div class="w3-display-middle w3-center">
         <!-- <span class="w3-text-black" style="font-size:90px">Lost</span> -->
-        <form class="form-horizontal" action="upload.php" method="post" enctype="multipart/form-data">
+        <form class="form-horizontal" action="https://ylin19.w3.uvm.edu/codefest/lnf/upload.php" method="post" enctype="multipart/form-data">
             <div class="w3-display-t w3-center">
 
                 <div class="form-group">
@@ -58,7 +58,7 @@ include("top.php");
                         <input class="form-control input-lg" id="inputlg" type="text">
                     </div>
                 </div>
-                
+
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">

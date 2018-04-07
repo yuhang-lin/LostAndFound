@@ -103,7 +103,6 @@
             GROUP BY LostAndFound.id 
             ORDER BY counts DESC";
 
-
        $result = passQuery($conn, $query);
 
        $row = $result->fetch_array(MYSQLI_ASSOC);

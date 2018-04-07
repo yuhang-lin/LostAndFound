@@ -3,11 +3,21 @@ body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
 }
+
+a {text-decoration: none;}
+
 #home.background {
     background-position: center;
     background-size: cover;
     background-image: url("../images/homepage.jpg");
     min-height: 75%;
+}
+
+#home1.background {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/homepage.jpg");
+    min-height: 100%;
 }
 
 #director.background{

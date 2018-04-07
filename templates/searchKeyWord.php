@@ -12,9 +12,9 @@ include ("top.php");
         <title>Search by Keyword</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <?php include ("menu.php");?>
     </head>
     <body>
-         <?php include ("menu.php");?>
         <div id="nameInput" class="input-group-lg center-block helloInput">
             <p class="lead">Please enter the keywords</p>
             <input id="user_name" type="text" class="form-control" placeholder="keyword" aria-describedby="sizing-addon1" value="" />
